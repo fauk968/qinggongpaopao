@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>订单详情</title>
+
+  <meta name="keywords" content="跑跑,轻工跑跑,同校送,同校快送" />
+  <meta name="description" content="同校速递1小时达，100名配送员为您服务，帮取件，代送件，帮打饭，陪散步" />
+
+  <!-- Bootstrap -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon/">
+  <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/details.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+
+  <!--引入art-template-->
+  <script src="lib/art-template/template-web.js"></script>
+</head>
+<body>
+
+
+<!--导航栏-->
+<nav class="navbar pp-nav"  data-spy="affix" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <h1><a class="navbar-brand" href="#"><span class="logo-h1">轻工跑跑</span><img src="images/logo.png"></a></h1>
+    </div>
+    <div class="collapse navbar-collapse">
+      <div class="botton-box"></div>
+      <ul class="nav navbar-nav">
+        <li><a href="./index.html">首页</a></li>
+        <li class="active"><a href="./order.html">我要接单</a></li>
+          <li><a href="./issue.html">我要发布</a></li>
+        <li><a href="./about.html">关于我们</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="./index.html#login" class="login-link">登录</a></li>
+        <li><a href="./register.html">注册</a></li>
+        <!--这里是个人中心-->
+        <li class="personage-li">
+          <a  class="personage" href="./centre.html">
+            <img src="./images/slide5.jpg" class="index-img hidden-xs">
+            <span class="index-username">琳琅小鑫</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!--主体内容-->
+<div class="or-main">
+  <!--左边盒子-->
+  <div class="or-left">
+    <div class="classify-title h3 hidden-xs">
+      <span class="glyphicon glyphicon-th-list"></span>
+      服务分类
+    </div>
+    <ul class="classify-ul clearfix">
+      <li><a href="./order.html" class="icon icon-buy">代买</a></li>
+      <li><a href="./order.html" class="icon icon-give">代送</a></li>
+      <li><a href="./order.html" class="icon icon-get">代取</a></li>
+      <li><a href="./order.html" class="icon icon-rest">其他</a></li>
+      <li class="icon icon-search hidden-lg hidden-md hidden-sm hidden-xs"></li>
+    </ul>
+    <div class="search-box">
+      <form action="" class="clearfix">
+        <input type="search" class="search icon icon-search" placeholder="搜索">
+        <input type="button" value="搜索" class="classify-submit">
+      </form>
+      <ul class="search-option clearfix hidden-xs">
+        <li><a href="./order.html">帮打包</a></li>
+        <li><a href="./order.html">拿快递</a></li>
+        <li><a href="./order.html">陪散步</a></li>
+        <li><a href="./order.html">玩游戏</a></li>
+      </ul>
+    </div>
+    <div class="run-img hidden-xs">
+      <img src="images/奔跑.gif">
+    </div>
+  </div>
+  <!--中间盒子-->
+  <div class="or-center">
+    <div class="de-header">
+      <ol class="de-path hidden-xs">
+        <li>当前位置:</li>
+        <li><a href="./order.html">我要接单</a></li>
+        <li><a href="#">代送</a></li>
+        <li class="active">订单详情</li>
+      </ol>
+    </div>
+
+    <!--内容-->
+
+    <div class="de-main">
+      <div class="de-img">
+        <img src="./images/slide5.jpg" alt="你">
+      </div>
+
+      <div class="de-title h3">
+        <span class="label label-default">代送</span>
+      帮取快递
+      </div>
+
+      <div class="de-info">
+        <div class="de-outher">
+          <a href="#" class="username">琳琅小鑫</a>
+          发布于
+          <div class="de-time">
+            15:30
+          </div>
+        </div>
+        <div class="de-classify">
+          分类: <span>代接</span>
+        </div>
+        <div class="de-read">
+          浏览:<span>522</span>次
+        </div>
+      </div>
+
+
+      <!--描述-->
+      <div class="de-describe">
+        从校园快递中心拿快递到5号楼5414谢谢
+      </div>
+
+      <!--确认接单-->
+      <a class="affirm btn bg-primary"  data-toggle="modal" data-target="#myModal">
+        确认接单
+      </a>
+
+
+      <!--弹出确认框-->
+      <div class="modal fade" id="myModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">确认接单？</h4>
+            </div>
+            <div class="modal-body">
+              接单后请务必按时完成任务，否则会对您的信任度产生影响
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+              <button type="button" class="confirm btn btn-primary">确定</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+  <!--右边盒子-->
+  <div class="or-right">
+    <div class="welcome">
+      <div class="h3">
+        欢迎加入轻工跑跑
+      </div>
+      <p class="pp-presentation">
+        这里是广州市轻工技师学院的官方跑腿平台，我们的宗旨在于将时间合理分配，今天你帮我明天我帮你...
+      </p>
+    </div>
+
+    <!--最新发布-->
+    <div class="new-issue">
+
+      <div class="issue-title">
+        <div class="title-content">最新发布</div>
+      </div>
+      <div class="issue-list">
+        <ul class="issue-ul" id="issue-ul">
+          <li>
+            <a href="./details.html">
+              <div class="content">
+                <div class="is-describe">
+                  1我是仿is的减肥方法你说地方啥房间里时代峻峰
+                </div>
+                <img src="images/slide5.jpg" alt="" class="is-img">
+              </div>
+              <div class="issue-info">
+                <span class="browse">浏览:152</span>
+                <span class="issue-time">15秒前</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--返回顶部箭头-->
+  <div class="callTop icon icon-top"></div>
+</div>
+
+
+<!--底部-->
+<footer class="footer">
+  <div class="container text-center">
+    <dl class="friend-link col-sm-4">
+      <dt>友情链接</dt>
+      <dd><a href="http://www.baidu.com">中国百度</a></dd>
+      <dd><a href="https://v3.bootcss.com/">bootstrap</a></dd>
+      <dd><a href="https://www.highcharts.com/">highcharts</a></dd>
+      <dd><a href="https://www.uupt.com/">UU跑腿</a></dd>
+    </dl>
+    <dl class="contact col-sm-4">
+      <dt>联系客服</dt>
+      <dd>400客服电话: 17665066614</dd>
+      <dd>电子邮箱：1010751918@qq.com</dd>
+      <dd>工作时间：早7:30-晚10:30</dd>
+      <dd>通过官方微信或官方微博联系"在线客服"提供24小时服务</dd>
+    </dl>
+    <div class="official col-sm-4">
+      <div class="wx">
+        <p class="official-title">官方微信</p>
+        <img src="images/wx.jpg" alt="微信">
+        <p class="gz"><span></span>关注微信</p>
+      </div>
+      <div class="wb">
+        <p class="official-title">官方微博</p>
+        <img src="images/wb.jpg" alt="微博">
+        <p class="gz"><span></span>关注微博</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!--小模态框-->
+<div class="modal fade bs-example-modal-sm" id="tips" tabindex="-1">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      不能自己接自己的订单哦！
+    </div>
+  </div>
+</div>
+
+<!--中间模板-->
+<script id="orderInfo" type="text/html">
+  <div class="de-header">
+    <ol class="de-path hidden-xs">
+      <li>当前位置:</li>
+      <li><a href="./order.html">我要接单</a></li>
+      <li>
+        <a href="./order.html">
+          {{ if web_mk == 0 }}
+            代买
+          {{ else if web_mk == 1 }}
+            代送
+          {{ else if web_mk == 2 }}
+            代取
+          {{ else if web_mk == 3 }}
+            其他
+          {{ /if }}
+        </a>
+      </li>
+      <li class="active">订单详情</li>
+    </ol>
+  </div>
+
+  <!--内容-->
+
+  <div class="de-main">
+    <div class="de-img">
+      {{ if photo }}
+      <img src="{{ photo }}" alt="订单详情图片">
+      {{ else }}
+        {{ if web_mk == 0 }}
+      <img src="./images/daimai.jpg" alt="订单详情图片">
+        {{ else if web_mk == 1 }}
+      <img src="./images/daisong.jpg" alt="订单详情图片">
+        {{ else if web_mk == 2 }}
+      <img src="./images/daiqu.jpg" alt="订单详情图片">
+        {{ else if web_mk == 3 }}
+      <img src="./images/qita.jpg" alt="订单详情图片">
+        {{ /if }}
+      {{ /if }}
+    </div>
+
+    <div class="de-title h3">
+      <span class="label label-default">
+          {{ if web_mk == 0 }}
+            代买
+          {{ else if web_mk == 1 }}
+            代送
+          {{ else if web_mk == 2 }}
+            代取
+          {{ else if web_mk == 3 }}
+            其他
+          {{ /if }}
+      </span>
+      {{ title }}
+    </div>
+
+    <div class="de-info">
+      <div class="de-outher">
+        <a href="#" class="username">{{ username }}</a>
+        发布于
+        <div class="de-time">
+          {{ time }}
+        </div>
+      </div>
+      <div class="de-classify">
+        分类:
+        <span>
+          {{ if web_mk == 0 }}
+            代买
+          {{ else if web_mk == 1 }}
+            代送
+          {{ else if web_mk == 2 }}
+            代取
+          {{ else if web_mk == 3 }}
+            其他
+          {{ /if }}
+        </span>
+      </div>
+      <div class="de-read">
+        浏览:<span>{{ count }}</span>次
+      </div>
+    </div>
+
+
+    <!--描述-->
+    <div class="de-describe">
+      {{ content }}
+    </div>
+
+    <!--确认接单-->
+    <a class="affirm btn bg-primary"  data-toggle="modal" data-target="#myModal">
+      确认接单
+    </a>
+
+
+    <!--弹出确认框-->
+    <div class="modal fade" id="myModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">确认接单？</h4>
+          </div>
+          <div class="modal-body">
+            接单后请尽快完成任务，不要让同学等太久哦！
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="confirm btn btn-primary">确定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</script>
+
+<!--右侧模板-->
+<script id="news-item" type="text/html">
+  {{ each list item index }}
+  <li>
+    <a href="./details.html?id={{item.ID}}">
+      <div class="content">
+        <div class="is-describe">
+          {{ item.title }}
+        </div>
+        {{ if item.photo }}
+        <img src="{{ item.photo }}" alt="" class="is-img">
+        {{ else }}
+        {{ if item.web_mk == 0 }}
+        <img src="./images/daimai.jpg" alt="" class="is-img">
+        {{ else if item.web_mk == 1 }}
+        <img src="./images/daisong.jpg" alt="" class="is-img">
+        {{ else if item.web_mk == 2 }}
+        <img src="./images/daiqu.jpg" alt="" class="is-img">
+        {{ else if item.web_mk == 3 }}
+        <img src="./images/qita.jpg" alt="" class="is-img">
+        {{ /if }}
+        {{ /if }}
+      </div>
+      <div class="issue-info">
+        <span class="browse">浏览:{{ item.count }}</span>
+        <span class="issue-time">{{ item.time }}</span>
+      </div>
+    </a>
+  </li>
+  {{ /each }}
+  {{ each list item index }}
+  <li>
+    <a href="./details.html">
+      <div class="content">
+        <div class="is-describe">
+          {{ item.title }}
+        </div>
+        {{ if item.photo }}
+        <img src="{{ item.photo }}" alt="" class="is-img">
+        {{ else }}
+        {{ if item.web_mk == 0 }}
+        <img src="./images/daimai.jpg" alt="" class="is-img">
+        {{ else if item.web_mk == 1 }}
+        <img src="./images/daisong.jpg" alt="" class="is-img">
+        {{ else if item.web_mk == 2 }}
+        <img src="./images/daiqu.jpg" alt="" class="is-img">
+        {{ else if item.web_mk == 3 }}
+        <img src="./images/qita.jpg" alt="" class="is-img">
+        {{ /if }}
+        {{ /if }}
+      </div>
+      <div class="issue-info">
+        <span class="browse">浏览:{{ item.count }}</span>
+        <span class="issue-time">{{ item.time }}</span>
+      </div>
+    </a>
+  </li>
+  {{ /each }}
+</script>
+
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/common.js"></script>
+<script src="js/details.js"></script>
+<script src="js/details-data.js"></script>
+</body>
+</html>

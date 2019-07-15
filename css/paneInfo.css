@@ -1,0 +1,10 @@
+/*上面是基本代码*/
+body {
+    background-color: #eee;
+}
+
+.container {
+    height: 500px;
+    background-color: #fff;
+    margin-top: 80px;
+}

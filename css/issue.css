@@ -1,0 +1,144 @@
+.must {
+    color: red;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/*上面是初始化代码*/
+body {
+    background: url("../images/issue-bg.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.wrap {
+    margin-top: 80px;
+    overflow: hidden;
+}
+.wrap .content {
+    margin: 120px 0 40px;
+    position: relative;
+    border-radius: 9px;
+    padding: 130px 10px 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+}
+.wrap .content:before {
+    content: "填写发布信息";
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    transform: translateX(-50%);
+    height: 60px;
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 30px;
+    padding: 0 10px;
+}
+.content .dot-l,
+.content .dot-r
+{
+    position: absolute;
+    top: 50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #2c3e50;
+}
+
+.content .dot-l {
+    left: 50px;
+}
+.content .dot-r {
+    right: 50px;
+}
+.content .dot-l:before,
+.content .dot-r:before{
+    content: "";
+    height: 600px;
+    width: 2px;
+    position: absolute;
+    background-color: #2c3e50;
+    left: 15px;
+    top: -600px;
+}
+
+/*表单*/
+.form {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    height: auto;
+}
+.form .form-group {
+    margin-bottom: 40px;
+}
+.form .form-group > label {
+    padding-top: 16px;
+}
+.form .form-group > div {}
+.form .form-group > div  input,
+.form .form-group > div > select{
+    height: 50px;
+}
+.form .form-group > div > textarea {
+    resize: none;
+    height: auto;
+}
+.form .form-group > div > select > option {
+}
+
+.form .form-group .img-wrap {
+    background-color: #2c3e50;
+    position: relative;
+    border-radius: 10px;
+}
+.form .form-group .img-wrap .imgName{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+.form .form-group .img-wrap .img {
+    opacity: 0;
+}
+
+.form .form-group .submit {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #2c3e50;
+    color: #2c3e50;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 0.4s;
+}
+.form .form-group .submit:hover {
+    background-color: #2c3e50;
+    color: #fff;
+}
+.form .form-group:last-of-type {
+    margin: 0;
+}
+
+/*媒体查询*/
+@media screen and (max-width: 768px) {
+
+    .wrap .content {
+        margin: 60px 0 20px;
+    }
+    .wrap .content:before{
+        font-size: 20px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 25px;
+        padding: 0 10px;
+        top: 45px;
+    }
+    .form .form-group > div > textarea {
+        height: 100px;
+    }
+}

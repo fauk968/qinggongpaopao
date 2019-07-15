@@ -1,0 +1,38 @@
+body, html {
+    background-color: #eee;
+}
+
+.wrap {
+    margin-top: 80px;
+    padding: 0;
+}
+.wrap .content {
+    background-color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+.wrap .content > div  {
+    height: 50px;
+    margin-bottom: 30px;
+}
+.wrap .content .glyphicon {
+    font-size: 70px;
+    color: green;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+.wrap .content .success-text {
+    font-size: 30px;
+}
+.wrap .content .success-info {
+    font-size: 20px;
+}
+.wrap .content .suc-link  {
+}
+.wrap .content .suc-link a {
+    background-color: #2c3e50;
+    padding: 8px;
+    color: #fff;
+    border-radius: 3px;
+}

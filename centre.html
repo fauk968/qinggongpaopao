@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>个人中心</title>
+
+  <meta name="keywords" content="跑跑,轻工跑跑,同校送,同校快送"/>
+  <meta name="description" content="同校速递1小时达，100名配送员为您服务，帮取件，代送件，帮打饭，陪散步"/>
+
+  <!-- Bootstrap -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon/">
+  <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/centre.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+
+  <!--引入art-template 引擎模板-->
+  <script src="lib/art-template/template-web.js"></script>
+
+</head>
+<body>
+
+<!--导航栏-->
+<nav class="navbar pp-nav" data-spy="affix">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <h1><a class="navbar-brand" href="#"><span class="logo-h1">轻工跑跑</span><img src="images/logo.png"></a></h1>
+    </div>
+    <div class="collapse navbar-collapse">
+      <div class="botton-box"></div>
+      <ul class="nav navbar-nav">
+        <li><a href="./index.html">首页</a></li>
+        <li class="order-link" data-href="./order.html"><a href="javascript:;">我要接单</a></li>
+        <li class="issue-link" data-href="./issue.html"><a href="javascript:;">我要发布</a></li>
+        <li><a href="./about.html">关于我们</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="./centre.html">个人中心</a></li>
+        <!--这里是个人中心-->
+        <li class="personage-li">
+          <a  class="personage" href="./centre.html">
+            <img src="./images/slide5.jpg" class="index-img hidden-xs">
+            <span class="index-username">琳琅小鑫</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+<!--主体内容-->
+<div class="content container">
+
+  <!--侧边栏-->
+  <div class="cen-side">
+
+    <div class="side-info hidden-xs">
+      <img src="images/slide5.jpg" alt="" class="user-img">
+      <p class="user-name">琳琅小鑫</p>
+    </div>
+
+    <!-- 侧边栏tab导航 -->
+    <ul class="nav nav-tabs clearfix">
+      <li class="active">
+        <a href="#personage" data-toggle="tab">
+          <span class="glyphicon glyphicon-user"></span>
+          个人中心
+        </a>
+      </li>
+      <li>
+        <a href="#indent" data-toggle="tab">
+          <span class="glyphicon glyphicon-list-alt"></span>
+          我的订单
+        </a>
+      </li>
+      <li>
+        <a href="#revamp" data-toggle="tab">
+          <span class="glyphicon glyphicon-erase"></span>
+          修改资料
+        </a>
+      </li>
+      <li>
+        <a href="#messages" data-toggle="tab">
+          <span class="glyphicon glyphicon-comment"></span>
+          消息
+        </a>
+      </li>
+      <li>
+        <a href="#settings" data-toggle="tab">
+          <span class="glyphicon glyphicon-cog"></span>
+          设置
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 主内容 -->
+  <div class="cen-main">
+    <!--主内容外皮-->
+    <div class="cen-wrap">
+      <!--主内容tab内容-->
+      <div class="tab-content">
+        <!--个人中心-->
+        <div class="tab-pane fade active in" id="personage">
+          <!--<div class="per-head">-->
+            <!--&lt;!&ndash;这是背景&ndash;&gt;-->
+            <!--<div class="per-blur"></div>-->
+            <!--<img class="per-img" src="./images/slide5.jpg" alt="头像">-->
+            <!--<p class="per-name">早上好呀，琳琅小鑫</p>-->
+            <!--<div class="count">-->
+              <!--<div class="order-count">接单数：32</div>-->
+              <!--<div class="issue-count">发单数：32</div>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--&lt;!&ndash;分隔线&ndash;&gt;-->
+          <!--<p class="partition"></p>-->
+          <!--<div class="per-info clearfix">-->
+            <!--<div class="info-title">-->
+              <!--<span class="glyphicon glyphicon-user"></span>-->
+              <!--个人信息-->
+            <!--</div>-->
+            <!--<div class="per-name"><strong>昵称：</strong>琳琅小鑫</div>-->
+            <!--<div class="per-sex"><strong>性别：</strong>男</div>-->
+            <!--<div class="per-age"><strong>年龄：</strong>18</div>-->
+            <!--<div class="per-signature">-->
+              <!--<strong>个人签名：</strong>-->
+              <!--花有重开日，人无再少年！-->
+              <!--<span class="null">花有重开日，人无再少年！</span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;分隔线&ndash;&gt;-->
+            <!--<p class="partition"></p>-->
+            <!--<div class="call-info ">-->
+              <!--<span class="glyphicon glyphicon-envelope"></span>-->
+              <!--联系信息-->
+            <!--</div>-->
+            <!--<div class="per-tel"><strong>联系电话：</strong>15602502638</div>-->
+            <!--<div class="per-tel"><strong>电子邮箱：</strong>fauk968@163.com</div>-->
+          <!--</div>-->
+        </div>
+        <!--我的订单-->
+        <div class="tab-pane fade" id="indent">
+          <div class="ind-title clearfix">
+            <div class="all pull-left">
+              <span class="glyphicon glyphicon-list-alt"></span>
+              全部订单
+            </div>
+            <div class="select pull-right">
+              筛选:
+              <a href="javascript:;" class="btn" data-type="username">我的发布</a>
+              <a href="javascript:;" class="btn" data-type="orderuser">我的接单</a>
+            </div>
+          </div>
+          <ul class="ind-list">
+            <li class="ind-item">
+              <!--<a href="javascript:;">-->
+                <div class="list-title">
+                  <div class="title-l">
+                    <span class="label label-primary classify">代取</span>
+                    <span class="label label-danger">进行中</span>
+                    <div class="h3">
+                      帮取快递
+                    </div>
+                  </div>
+                  <div class="title-r">
+                  <span class="author">
+                    琳琅小鑫
+                  </span>
+                    <span>发布于</span>
+                    <span class="time">2019.5.1</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <div class="des-content">
+                    从校园快递中心拿快递到5号楼5414谢谢
+                    从校园快递中心拿快递到5号楼5414谢谢
+                    从校园快递中心拿快递到5号楼5414谢谢
+                  </div>
+                  <img src="images/s1.jpg" class="list-img col-md-2 col-sm-3 col-xs-4">
+                </div>
+                <!--这个是操作是否取消订单-->
+                <div class="menu-oper glyphicon glyphicon-option-horizontal">
+                </div>
+                <div class="operation">
+                    <div class="ope-wrap">
+                      <a href="javascript:;" class="ind-cancel pull-left">取消订单</a>
+                      <a href="javascript:;" class="ind-affirm pull-right">确认收货</a>
+                    </div>
+                </div>
+              <!--</a>-->
+            </li>
+            <li class="ind-item">
+              <!--<a href="javascript:;">-->
+                <div class="list-title">
+                  <div class="title-l">
+                    <span class="label label-primary classify">代取</span>
+                    <span class="label label-success">已结束</span>
+                    <div class="h3">
+                      帮取快递
+                    </div>
+                  </div>
+                  <div class="title-r">
+                  <span class="author">
+                    琳琅小鑫
+                  </span>
+                    发布于
+                    <span class="time">2019.5.1</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <div class="des-content">
+                    从校园快递中心拿快递到5号楼5414谢谢
+                    从校园快递中心拿快递到5号楼5414谢谢
+                    从校园快递中心拿快递到5号楼5414谢谢
+                  </div>
+                  <img src="images/s2.jpg" class="list-img col-md-2 col-sm-3 col-xs-4">
+                </div>
+
+              <!--这个是操作是否取消订单-->
+              <div class="menu-oper glyphicon glyphicon-option-horizontal"></div>
+              <div class="operation">
+                <div class="ope-wrap">
+                  <a href="javascript:;" class="ind-cancel pull-left">取消订单</a>
+                  <a href="javascript:;" class="ind-affirm pull-right">确认收货</a>
+                </div>
+              </div>
+              <!--</a>-->
+            </li>
+          </ul>
+          <p class="add-content">
+            加载更多
+          </p>
+          <div class="button-line">
+            到达我的底线了
+          </div>
+        </div>
+        <!--修改资料-->
+        <div class="tab-pane fade" id="revamp">
+          <!--<div class="rev-title">-->
+            <!--<span class="glyphicon glyphicon-user"></span>-->
+            <!--修改个人信息-->
+          <!--</div>-->
+          <!--<form action="" class="form form-control form-horizontal clearfix">-->
+            <!--<div class="top-wrap">-->
+              <!--<div class="img-wrap">-->
+                <!--<span class="hint">上传新头像</span>-->
+                <!--<input type="file" class="img-file">-->
+                <!--<img src="./images/slide5.jpg" alt="头像" class="user-img">-->
+              <!--</div>-->
+              <!--<div class="form-group">-->
+                <!--<label for="username" class="col-sm-2 control-label">新昵称:</label>-->
+                <!--<div class="col-sm-10">-->
+                  <!--<input type="email" class="form-control" id="username" placeholder="新用户名(长度为1-6)">-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="form-group sex-group">-->
+                <!--<label for="sex1" class="col-sm-2 control-label">性别:</label>-->
+                <!--<div class="col-sm-10">-->
+                  <!--<input type="radio" id="sex1" name="sex">男-->
+                  <!--<input type="radio" id="sex2" name="sex">女-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="form-group">-->
+                <!--<label for="age" class="col-sm-2 control-label">年龄:</label>-->
+                <!--<div class="col-sm-10">-->
+                  <!--<input type="number" class="form-control" id="age">-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="form-group">-->
+                <!--<label for="signature" class="si-label  col-sm-2 control-label">个人签名:</label>-->
+                <!--<div class="col-sm-10 ">-->
+                  <!--<textarea id="signature" maxlength="25" placeholder="最多25个字" class="signature"></textarea>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;分隔线&ndash;&gt;-->
+            <!--<p class="partition"></p>-->
+            <!--<div class="rev-title">-->
+              <!--<span class="glyphicon glyphicon-envelope"></span>-->
+              <!--修改联系信息-->
+            <!--</div>-->
+            <!--<div class="bottom-wrap">-->
+              <!--<div class="form-group">-->
+                <!--<label for="tel" class="col-sm-2 control-label">联系电话:</label>-->
+                <!--<div class="col-sm-10">-->
+                  <!--<input type="number" class="form-control" id="tel">-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="form-group">-->
+                <!--<label for="email" class="col-sm-2 control-label">电子邮箱:</label>-->
+                <!--<div class="col-sm-10">-->
+                  <!--<input type="email" class="form-control" id="email">-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;分隔线&ndash;&gt;-->
+            <!--<p class="partition"></p>-->
+            <!--<div class="rev-title">-->
+              <!--<span class="glyphicon glyphicon-question-sign"></span>-->
+              <!--验证身份-->
+            <!--</div>-->
+            <!--<div class="verify-wrap">-->
+              <!--<div class="form-group">-->
+                <!--<label for="question" class="col-sm-2 control-label">密保问题:</label>-->
+                <!--<div class="col-sm-10">-->
+                  <!--<input type="text" class="form-control" id="question">-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="form-group">-->
+                <!--<label for="answer" class="col-sm-2 control-label">密保答案:</label>-->
+                <!--<div class="col-sm-10">-->
+                  <!--<input type="text" class="form-control" id="answer">-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="submit-wrap">-->
+                <!--<input type="submit" value="提交" class="rev-submit">-->
+              <!--</div>-->
+            <!--</div>-->
+
+
+
+
+          <!--</form>-->
+        </div>
+        <!--消息-->
+        <div class="tab-pane fade" id="messages">
+          <div class="mes-hint">
+            暂无消息
+          </div>
+        </div>
+        <!--设置-->
+        <div class="tab-pane fade" id="settings">
+          <div class="logout">
+            <button class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal">退出登录</button>
+            <p>注意：退出登录后下次进入本平台需要再次登录</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--模态框-->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">确定退出登录？</h4>
+        </div>
+        <div class="modal-body">
+          注意：退出登录后将跳回首页
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <a href="index.html" class="delSession"><button type="button" class="btn btn-primary">确定</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!--返回顶部箭头-->
+<div class="callTop icon icon-top" title="返回顶部">
+
+</div>
+
+
+<!--小模态框-->
+<div class="modal fade bs-example-modal-sm" id="tipssuccess" tabindex="-1">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      操作成功！
+    </div>
+  </div>
+</div>
+<!--小模态框-->
+<div class="modal fade bs-example-modal-sm" id="tipsfail" tabindex="-1">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      操作失败，可能是当前订单状态不能满足操作。
+    </div>
+  </div>
+</div>
+
+
+<!--这里是个人中心模板-->
+<script id="userInof" type="text/html">
+  <div class="per-head">
+    {{ if picture }}
+    <!--这是背景-->
+    <img class="per-blur" src="{{ picture }}"/>
+    <img class="per-img" src="{{ picture }}" alt="头像">
+    {{ else }}
+    <img class="per-blur" src="./images/slide5.jpg"/>
+    <img class="per-img" src="./images/default.png" alt="头像">
+    {{ /if }}
+    <p class="per-name">{{ username | sayhi }}好呀，{{ username }}</p>
+    <div class="count">
+      <div class="order-count"></div>
+      <div class="issue-count"></div>
+    </div>
+  </div>
+  <!--分隔线-->
+  <p class="partition"></p>
+  <div class="per-info clearfix">
+    <div class="info-title">
+      <span class="glyphicon glyphicon-user"></span>
+      个人信息
+    </div>
+    <div class="per-name"><strong>昵称：</strong>{{ username }}</div>
+    {{ if sex === '0' }}
+    <div class="per-sex"><strong>性别：</strong>女</div>
+    {{ else if sex === '1' }}
+    <div class="per-sex"><strong>性别：</strong>男</div>
+    {{ else }}
+    <div class="per-sex"><strong>性别：</strong><span class="null">空空如也</span></div>
+    {{ /if }}
+    {{ if age }}
+    <div class="per-age"><strong>年龄：</strong>{{ age }}</div>
+    {{ else }}
+    <div class="per-age"><strong>年龄：</strong><span class="null">空空如也</span></div>
+    {{ /if }}
+    <div class="per-signature">
+      {{ if idiograph }}
+      <strong>个人签名：</strong>{{ idiograph }}
+      {{ else }}
+      <strong>个人签名：</strong><span class="null">您还没有设置个人签名哦!</span>
+      {{ /if }}
+    </div>
+    <!--分隔线-->
+    <p class="partition"></p>
+    <div class="call-info ">
+      <span class="glyphicon glyphicon-envelope"></span>
+      联系信息
+    </div>
+    {{ if phone }}
+    <div class="per-tel"><strong>联系电话：</strong>{{ phone }}</div>
+    {{ else }}
+    <div class="per-tel"><strong>联系电话：</strong><span class="null">您还没设置呢</span></div>
+    {{ /if }}
+    {{ if email }}
+    <div class="per-tel"><strong>电子邮箱：</strong>{{ email }}</div>
+    {{ else }}
+    <div class="per-tel"><strong>电子邮箱：</strong><span class="null">您还没设置呢</span></div>
+    {{ /if }}
+  </div>
+</script>
+
+<!--这里是修改资料模板-->
+<script id="alter" type="text/html">
+  <div class="rev-title">
+    <span class="glyphicon glyphicon-user"></span>
+    修改个人信息
+  </div>
+  <form action="./server/updata.php" method="post" enctype="multipart/form-data" class="form form-control form-horizontal clearfix">
+    <div class="top-wrap">
+      <div class="img-wrap">
+        <span class="hint">上传新头像</span>
+        {{ if picture }}
+        <input type="file" class="img-file" id="imgFile" name="headimg" value="{{ picture }}">
+        <img src="{{ picture }}" alt="头像" class="user-img">
+        {{ else }}
+        <input type="file" class="img-file" id="imgFile" name="headimg">
+        <img src="./images/default.png" alt="头像" class="user-img">
+        {{ /if }}
+      </div>
+      <div class="form-group">
+        <label for="username" class="col-sm-2 control-label">新昵称:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="username" value="{{ username }}" id="username" placeholder="新用户名(长度为1-6)">
+          <span class="red username-fail">用户名已存在</span>
+        </div>
+      </div>
+      <div class="form-group sex-group">
+        <label for="sex1" class="col-sm-2 control-label">性别:</label>
+        <div class="col-sm-10">
+          {{ if sex }}
+            {{ if sex == 1 }}
+            <input type="radio" id="sex1" name="sex" value="1" checked>男
+            <input type="radio" id="sex2" name="sex" value="0">女
+            {{ else if sex == 0 }}
+            <input type="radio" id="sex1" name="sex" value="1">男
+            <input type="radio" id="sex2" name="sex" value="0" checked>女
+            {{ /if }}
+          {{ else }}
+            <input type="radio" id="sex1" name="sex" value="1">男
+            <input type="radio" id="sex2" name="sex" value="0">女
+          {{ /if }}
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age" class="col-sm-2 control-label">年龄:</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" name="age" id="age" value="{{ age }}">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="signature" class="si-label  col-sm-2 control-label">个人签名:</label>
+        <div class="col-sm-10 ">
+          <textarea id="signature" maxlength="25" placeholder="最多25个字" name="idiograph" class="signature">{{idiograph}}</textarea>
+        </div>
+      </div>
+    </div>
+    <!--分隔线-->
+    <p class="partition"></p>
+    <div class="rev-title">
+      <span class="glyphicon glyphicon-envelope"></span>
+      修改联系信息
+    </div>
+    <div class="bottom-wrap">
+      <div class="form-group">
+        <label for="tel" class="col-sm-2 control-label">联系电话:</label>
+        <div class="col-sm-10">
+          <input type="tel" class="form-control" name="phone" id="tel" value="{{ phone }}" maxlength="11">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="col-sm-2 control-label">电子邮箱:</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" name="email" id="email" value="{{ email }}">
+        </div>
+      </div>
+    </div>
+    <!--分隔线-->
+    <p class="partition"></p>
+    <div class="rev-title">
+      <span class="glyphicon glyphicon-question-sign"></span>
+      验证身份
+    </div>
+    <div class="verify-wrap">
+      <div class="form-group">
+        <label for="question" class="col-sm-2 control-label">密保问题:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="question" value="{{ question }}">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="answer" class="col-sm-2 control-label">密保答案:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="answer">
+          <span class="red answer-fail">答案错误</span>
+        </div>
+      </div>
+      <div class="submit-wrap">
+        <input type="submit" value="提交" class="rev-submit">
+      </div>
+    </div>
+  </form>
+</script>
+
+<!--这里是我的订单页面-->
+<script id="indent-temp" type="text/html">
+    {{ each list item index }}
+    <li class="ind-item">
+      <!--<a href="javascript:;">-->
+      <div class="list-title">
+        <div class="title-l">
+          {{ if item.web_mk == 0}}
+          <span class="label label-primary classify">代买</span>
+          {{ else if item.web_mk == 1}}
+          <span class="label label-primary classify">代送</span>
+          {{ else if item.web_mk == 2}}
+          <span class="label label-primary classify">代取</span>
+          {{ else if item.web_mk == 3}}
+          <span class="label label-primary classify">其他</span>
+          {{ /if }}
+          {{ if item.state == 0 }}
+          <span class="label label-primary">已发布</span>
+          {{ else if item.state == 1 }}
+          <span class="label label-danger">进行中</span>
+          {{ else if item.state == 2 }}
+          <span class="label label-success">已结束</span>
+          {{ /if }}
+          <div class="h3">
+            {{ item.title }}
+          </div>
+        </div>
+        <div class="title-r">
+                  <span class="author">
+                    {{ item.username }}
+                  </span>
+          发布于
+          <span class="time">{{ item.date }} {{ item.time }}</span>
+        </div>
+      </div>
+      <div class="description">
+        <div class="des-content">
+          {{ item.content }}
+        </div>
+        {{ if item.photo }}
+        <img src="{{ item.photo }}" class="list-img col-md-2 col-sm-3 col-xs-4">
+        {{ else }}
+          {{ if item.web_mk == 0 }}
+          <img src="./images/daimai.jpg" class="list-img col-md-2 col-sm-3 col-xs-4">
+          {{ else if item.web_mk == 1 }}
+          <img src="./images/daisong.jpg" class="list-img col-md-2 col-sm-3 col-xs-4">
+          {{ else if item.web_mk == 2 }}
+          <img src="./images/daiqu.jpg" class="list-img col-md-2 col-sm-3 col-xs-4">
+          {{ else if item.web_mk == 3 }}
+          <img src="./images/qita.jpg" class="list-img col-md-2 col-sm-3 col-xs-4">
+          {{ /if }}
+        {{ /if }}
+
+      </div>
+
+      <!--这个是操作是否取消订单-->
+      {{ if item.username == username}}
+      <div class="menu-oper glyphicon glyphicon-option-horizontal"></div>
+      <div class="operation">
+        <div class="ope-wrap"  data-id="{{ item.ID }}">
+          <a href="javascript:;" class="ind-cancel pull-left">取消订单</a>
+          <a href="javascript:;" class="ind-affirm pull-right">确认收货</a>
+        </div>
+      </div>
+      {{ /if }}
+      <!--</a>-->
+    </li>
+    {{ /each }}
+</script>
+
+
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/common.js"></script>
+<script src="js/centre.data.js"></script>
+<script src="js/centre.js"></script>
+</body>
+</html>

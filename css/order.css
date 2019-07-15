@@ -1,0 +1,428 @@
+body {
+    background-color: #eee;
+}
+a {
+    text-decoration: none;
+    color: #777;
+}
+
+.footer {
+    position: relative;
+    z-index: 1;
+}
+
+/*上面是初始化*/
+.or-main {
+    margin-top: 80px;
+    position: relative;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+/*左边内容*/
+
+.or-main .or-left {
+    background-color: #f6f6f6;
+    width: 190px;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+}
+.or-main .or-left .classify-title {
+    width: 100%;
+    text-align: center;
+    background-color: #429AD9;
+    margin: 0;
+    padding: 20px 0;
+    color: #FEFEFE;
+}
+.or-main .or-left  span {
+    vertical-align: top;
+}
+
+.or-main .or-left .classify-ul {
+    width: 100%;
+    margin-bottom: 0;
+    border-bottom: 1px solid #eee;
+}
+.or-main .or-left .classify-ul li {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+}
+.or-main .or-left .classify-ul li:hover {
+    background-color: #fff;
+}
+.or-main .or-left .classify-ul li:hover a{
+    color: #2aabd2;
+}
+.or-main .or-left .classify-ul li.active {
+    background-color: #fff;
+}
+.or-main .or-left .classify-ul li.active a {
+    color: #2aabd2;
+}
+.or-main .or-left .classify-ul li a {
+    display: inline-block;
+    width: 100%;
+    color: #666;
+    text-decoration: none;
+}
+.or-main .or-left .classify-ul a:before {
+    margin-right: 6px;
+    font-size: 20px;
+}
+.or-left .search-box {
+    width: 100%;
+    padding: 30px 10px;
+    position: relative;
+}
+.or-left .search-box form .search {
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 12px;
+    height: 30px;
+    float: left;
+    width: 130px;
+}
+.or-left .search-box form .classify-submit {
+    float: left;
+    width: 38px;
+    font-size: 12px;
+    height: 30px;
+    border: none;
+    background-color: #429AD9;
+    color: #fff;
+}
+.or-left .search-box .search-option {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+}
+.or-left .search-box .search-option li {
+    width: 50%;
+    float: left;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.or-left .search-box .search-option li a {
+}
+.or-left .search-box .search-option li a:hover {
+    text-decoration: none;
+    color: #2c3e50;
+}
+.or-left .search-box .search-option a:before{
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #429AD9;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.or-left .run-img {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    border-top: #ccc;
+}
+.or-left .run-img img {
+    width: 100%;
+    max-width: 188px;
+}
+
+/*媒体查询*/
+@media (max-width: 992px)  {
+    .or-main .or-left {
+        width: 140px;
+    }
+    .or-left .search-box  {
+        display: none;
+    }
+    .or-left .search-box form .search {
+        width: 80px;
+    }
+}
+@media (max-width: 768px)  {
+    .or-main .or-left {
+        position: relative;
+        width: 100%;
+    }
+    .or-left .classify-ul {
+    }
+    .or-left .classify-ul li{
+        float: left;
+        width: 20%;
+    }
+
+    .or-left .search-box form {
+        width: 100%;
+        position: relative;
+        height: 50px;
+    }
+    .or-left .search-box form .search {
+        width: 100%;
+        padding-right: 50px;
+        height: 100%;
+    }
+    .or-left .search-box form .classify-submit {
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+    .or-main .or-left .classify-ul li.icon-search {
+        float: right;
+        font-size: 20px;
+        font-weight: 700;
+        height: 100%;
+    }
+}
+
+/*中间内容*/
+
+
+.or-main .or-center {
+    background-color: #fff;
+    margin-left: 190px;
+    margin-right: 250px;
+    padding: 0px 10px;
+    overflow: hidden;
+    padding-top: 10px;
+    min-height: 600px;
+}
+.or-center .server-title {
+    border-bottom: 1px solid #999;
+    position: relative;
+}
+.or-center .server-content {
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 3px solid #2c3e50;
+    position: relative;
+    bottom: -1px;
+    left: 0;
+    display: inline-block;
+}
+.or-center .server-count {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 14px;
+    display: inline-block;
+    transform: translateY(-50%);
+}
+.or-center .server-count span {
+    color: #2aabd2;
+}
+
+.or-center .serve-list {
+    padding: 10px 0;
+}
+.serve-list li  {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+.serve-list li>.details {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.serve-list li>.details:hover .des-content {
+    color: #2aabd2;
+}
+.serve-list li  .list-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.serve-list li  .list-title .title-l {
+    display: flex;
+}
+.serve-list li  .list-title .title-r {
+    display: flex;
+    font-size: 14px;
+}
+.serve-list li  .list-title .label {
+     line-height: 25px;
+        background-color: #2aabd2;
+ }
+.serve-list li  .list-title .h3 {
+    margin: 0;
+    margin-left: 5px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333;
+}
+.serve-list li  .list-title .author {
+    color: #2aabd2;
+}
+.serve-list li  .list-title .time {}
+.serve-list li  .description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.serve-list li  .description .des-content {
+    font-size: 14px;
+}
+.serve-list li .list-img {
+    max-height: 100px;
+    padding: 5px;
+}
+/*底线*/
+.empty-line {
+    text-align: center;
+    display: none;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333;
+}
+/*加载更多*/
+.add-content {
+    width: 100%;
+    background-color: #2aabd2;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 1px solid transparent;
+}
+.add-content:hover {
+    background-color: #fff;
+    color: #2aabd2;
+    border: 1px solid #2aabd2;
+}
+.add-content .loading {
+    width: 30px;
+    display: none;
+}
+/*媒体查询*/
+@media (max-width: 1200px)  {
+    .or-main .or-center {
+    }
+}
+@media (max-width: 992px)  {
+    .or-main .or-center {
+        margin-left: 140px;
+        margin-right: 0;=
+    }
+}
+
+@media (max-width: 768px)  {
+    .or-main .or-center {
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 0;
+    }
+}
+
+
+/*右边内容*/
+.or-main .or-right {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    padding: 10px;
+    padding-top: 10px;
+}
+.or-right .welcome {
+    width: 100%;
+    border: 1px solid #eaeaea;
+    padding: 30px 10px 10px;
+    position: relative;
+}
+.or-right .welcome:before {
+    content: "热门推荐";
+    position: absolute;
+    top: 0;
+    left: 43px;
+    background-color: #2aabd2;
+    padding: 5px;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    font-size: 14px;
+}
+.or-right .welcome:hover {
+    border-color: #2aabd2;
+}
+.or-right .welcome .h3 {
+    color: #2aabd2;
+    text-align: center;
+    font-size: 20px;
+}
+.or-right .welcome .pp-presentation {
+    font-size: 12px;
+    color: #999;
+}
+.or-right .new-issue {
+    margin-top: 30px;
+    background-color: #fff;
+}
+.or-right .new-issue .issue-title {
+    border-bottom: 1px solid #000;
+    padding: 20px 0 0 0;
+}
+.or-right .new-issue .title-content {
+    position: relative;
+    top: 1px;
+    left: 0;
+    border-bottom: 3px solid #2c3e50;
+    display: inline-block;
+}
+
+
+.or-right .new-issue .issue-list {
+    width: 100%;
+    /*padding: 10px 0 5px;*/
+    font-size: 12px;
+    color: #999;
+    height: 272px;
+    overflow: hidden;
+    position: relative;
+}
+.or-right .issue-list .issue-ul {
+    height: 5000px;
+    position: absolute;
+    width: 100%;
+}
+.or-right .issue-list li {
+    border-bottom: 1px solid #999;
+    padding: 5px 0;
+    width: 100%;
+}
+.or-right .issue-list li a {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+.or-right .issue-list li a:hover {
+    color: #2aabd2;
+}
+.or-right .issue-list li .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.or-right .issue-list li .is-describe {}
+.or-right .issue-list li .is-img {
+    height: 53px;
+}
+.or-right .issue-list li .issue-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.or-right .issue-list li .issue-info .browse {}
+.or-right .issue-list li .issue-info .browse .issue-time {}
+

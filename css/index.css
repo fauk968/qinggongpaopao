@@ -1,0 +1,533 @@
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+@media screen and (min-width: 768px) {
+    /*第二个盒子的媒体查询*/
+    /*第三个盒子的媒体查询*/
+    .second-box> .container {
+        width: 750px;
+    }
+    .third-box>.container {
+        width: 750px;
+    }
+
+
+}
+
+@media screen and (min-width: 992px) {
+    .second-box> .container {
+        width: 970px;
+    }
+    .third-box>.container {
+        width: 970px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .second-box> .container {
+        width: 1170px;
+    }
+    .third-box>.container {
+        width: 1170px;
+    }
+}
+
+/*上面是初始化代码*/
+.pp-nav {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/*第一个盒子*/
+
+.first-box {
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+/*动画背景墙*/
+.first-box .wall {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/背景.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    opacity: 0.3;
+}
+
+.first-ani {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.first-ani li {
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+.first-ani li:nth-of-type(1) {
+    background: url("../images/slide5.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.first-ani li:nth-of-type(2) {
+    background: url("../images/s2.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.first-ani li:nth-of-type(3) {
+    background: url("../images/daimai.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.first-ani li:nth-of-type(4) {
+    background: url("../images/w4.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.first-box .show {
+    display: block;
+    opacity: 0;
+    animation: showImg 7s;
+}
+@keyframes showImg {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    10% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+.first-box .content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.first-box .content>div {
+    margin-top: 240px;
+    color: #ddd;
+}
+
+.first-box .content>div h2 {
+    font-size: 40px;
+    transition: all 0.5s;
+    transform: translateY(100px);
+    opacity: 0;
+}
+.first-box .content>div h2.active {
+    transform: none;
+    opacity: 1;
+}
+
+.first-box .content>div p {
+    font-size: 18px;
+    transition: all 0.5s ease 0.3s;
+    transform: translateY(100px);
+    opacity: 0;
+    line-height: 2;
+}
+.first-box .content>div p.active {
+    transform: none;
+    opacity: 1;
+}
+
+.first-box .content>div a {
+    display: block;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 15px;
+    color: #ddd;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    transform: translateY(100px);
+    opacity: 0;
+}
+.first-box .content>div a.active {
+    transform: none;
+    opacity: 1;
+}
+.first-box .content>div a:first-of-type {
+    background-color: #2c3e50;
+    border: 1px solid #ccc;
+}
+/*.first-box .content>div a:first-of-type:hover {*/
+    /*border: 1px solid #2c3e50;*/
+    /*background-color: #fff;*/
+    /*color: #2c3e50;*/
+/*}*/
+
+.first-box .content>div a:last-of-type {
+    border: 1px solid #2c3e50;
+    background-color: #fff;
+    color: #2c3e50;
+}
+/*.first-box .content>div a:last-of-type:hover {*/
+    /*background-color: #2c3e50;*/
+    /*color: #ddd;*/
+/*}*/
+/*第二个盒子*/
+.second-box {
+    padding: 50px 0;
+}
+.second-box>.platform-title {
+    color: #080808;
+}
+.second-box>.container .platform-img {
+    transform: translateY(100px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+.second-box>.container .platform-img.active {
+    transform: none;
+    opacity: 1;
+}
+.second-box>.container .platform-img img {
+    width: 90%;
+}
+.second-box>.container .platform-introduce{
+    font-size: 20px;
+    line-height: 1.8;
+    padding-top: 50px;
+    color: #666;
+    transform: translateY(100px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+.second-box>.container .platform-introduce.active {
+    transform: none;
+    opacity: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .second-box>.container .platform-introduce{
+        padding-top: 0;
+    }
+}
+
+
+/*第三个盒子*/
+
+.third-box {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 50px 0;
+}
+/*这里是媒体查询*/
+
+.third-box .third-title {
+
+}
+.third-box .third-introduce {
+    color: #666;
+    transform: translateY(100px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+.third-box .third-introduce.active {
+    transform: none;
+    opacity: 1;
+}
+
+/*第三盒子的动画类*/
+.third-box>div>div[class^=col].third-animate {
+    transform: translateY(100px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+.third-box>div>div[class^=col].third-animate.active {
+    transform: none;
+    opacity: 1;
+}
+
+.third-box>div>div[class^=col] .content {
+    margin: 10px;
+    margin-top: 50px;
+    position: relative;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .3);
+}
+
+.third-box>div>div[class^=col] .content:hover .conceal {
+    transform: scale(1.2);
+}
+
+
+.third-box>div>div[class^=col] .conceal {
+    height: 210px;
+    border: 1px solid #000;
+    width: 100%;
+    transition: all 0.8s;
+}
+
+.third-box>div>div:nth-of-type(2) .conceal {
+    background: url("../images/01.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.third-box>div>div:nth-of-type(3) .conceal {
+    background: url("../images/02.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.third-box>div>div:nth-of-type(4) .conceal {
+    background: url("../images/03.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.third-box>div>div:nth-of-type(5) .conceal {
+    background: url("../images/04.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.third-box>div>div .shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ddd;
+    transition: all 0.8s;
+    opacity: 0;
+}
+.third-box>div>div[class^=col] .content:hover .shade {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.third-box .shade .h4 {
+    margin-top: 50px;
+}
+
+.third-box .shade .serve-introduce {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/*第四个盒子：数据可视化*/
+.fourth-box {
+    padding: 50px 0;
+}
+.fourth-box .data-view {
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(100px);
+}
+
+.fourth-box .data-view.active {
+    opacity: 1;
+    transform: none;
+}
+
+/*第五个盒子：轮播图*/
+.fifth-box {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+.fifth-box .slide-view {
+    overflow: hidden;
+    margin: 0 auto;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(100px);
+}
+.fifth-box .slide-view.active {
+    opacity: 1;
+    transform: none;
+}
+
+.fifth-box ul.slide-wrap {
+    width: 9999px;
+    transition: all 0.5s;
+}
+.fifth-box ul.slide-wrap li{
+    float: left;
+    margin-right: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 5px rgba(0,0,0, 0.4);
+}
+.fifth-box ul.slide-wrap img{
+    width: 100%;
+}
+
+/*登录页面*/
+.login-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    padding: 0;
+    display: none;
+}
+.login-box .conceal {
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+.login-box .login-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*transform: translate(-50%,-50%);*/
+    margin-top: -177.5px;
+    margin-left: -150px;
+    z-index: 100;
+    background-color: #fff;
+    padding: 20px 20px 0 20px;
+    width: 300px;
+}
+.login-box .login-content .login-title {
+    height: 50px;
+    background-color: #2c3e50;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    user-select: none;
+    padding: 5px 20px;
+    cursor: move;
+}
+.login-box .login-title .lg-logo {
+    float: left;
+    width: 30%;
+    height: 40px;
+    background: url("../images/logo.png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin: 0;
+}
+.login-box .login-title .title {
+    line-height: 40px;
+    color: #d8d8d8;
+    float: left;
+    text-align: center;
+    width: 70%;
+}
+.login-box .form {
+    margin-top: 50px;
+}
+.login-box .form .form-group {
+    height: 40px;
+    line-height: 40px;
+}
+.login-box .form input {
+    height: 40px;
+    border-radius: 5px;
+}
+.login-box .form .username,
+.login-box .form .password {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline-color: #2c3e50;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+/*验证码*/
+.login-box .form .verify {
+    float: left;
+    width: 50%;
+    font-size: 14px;
+    padding-left: 20px;
+    height: 100%;
+    border: 1px solid #ccc;
+    outline-color: #2c3e50;
+}
+.login-box .form .verify-canvas {
+    float: right;
+    border: 1px solid #ccc;
+    width: 30%;
+    height: 40px;
+    overflow: hidden;
+    margin-left: 7px;
+}
+.login-box .form .trade {
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+.login-box .form .login-btn {
+    width: 100%;
+    background-color: gray;
+    border: none;
+    color: #d8d8d8;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+.login-box .form .forget,
+.login-box .form .register-link {
+    font-size: 12px;
+    color: #080808;
+}
+
+/*登录成功模态窗*/
+.success-box {
+    margin-top: 200px;
+}
+.success-box .modal-header {
+    border-bottom: none;
+    text-align: center;
+}
+
+
+/*音乐播放器*/
+.music {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 80px;
+    z-index: 9999;
+}
+.music audio {}
+.music .rotate {}
+.music .rotate img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .first-box .content>div p {
+        line-height: 1.6;
+        font-size: 16px;
+    }
+    .music {
+        right: 30px;
+        bottom: 30px;
+    }
+}

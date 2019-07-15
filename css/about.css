@@ -1,0 +1,102 @@
+.pp-nav {
+    box-shadow: none;
+}
+
+
+/*上面是初始化代码*/
+.header {
+    padding: 0;
+    margin-top: 80px;
+    background: url("../images/关于我们.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #000;
+    position: relative;
+    height: 450px;
+}
+.header:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.header .top-text {
+    margin-top: 170px;
+}
+.header .top-text .about-cn {
+    font-size: 45px;
+}
+.header .top-text .about-en {
+    font-size: 20px;
+}
+.header .bot-text {
+    font-size: 25px;
+}
+
+/*介绍开始*/
+.introduce {
+    background-color: #eee;
+    padding-top: 50px;
+}
+.introduce .int-head {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+.introduce .int-content {
+    padding: 50px 0;
+}
+.introduce .int-content .int-left {}
+.introduce .int-content .int-left .int-left-wrap,
+.introduce .int-content .int-right .int-right-wrap{
+}
+.introduce .int-content .int-left .int-title {
+    font-size: 35px;
+    float: left;
+}
+.introduce .int-content .int-left .wechat {
+    line-height: 40px;
+    background-color: #2c3e50;
+    width: 120px;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    margin: 40px 0;
+    cursor: pointer;
+    float: left;
+}
+.introduce .int-content .int-left .wechat:hover+img {
+    display: block;
+}
+.introduce .int-content .int-left .code {
+    width: 100px;
+    height: auto;
+    float: left;
+    transition: 0.5s;
+    display: none;
+}
+.introduce .int-content .int-right .int-right-wrap{
+}
+.introduce .int-content .int-right {}
+.introduce .int-content .int-right p {}
+
+
+
+/*媒体查询*/
+@media (max-width: 768px) {
+
+    .header .top-text .about-cn {
+        font-size: 30px;
+    }
+    .header .top-text .about-en {
+        font-size: 16px;
+    }
+    .header .bot-text {
+        font-size: 18px;
+    }
+
+}
